@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+<!--Esta etiqueta nos ayuda a crear un formulario-->
+<form>
+    <!--Dentro de mis inputs voy a tener cierto atributos que nos van a facilitar identificar las funciones y reqimientos de los mismos, required: se refiere a un campo que debe ser completado.
+    name:  nos ayuda a identificar a que se refiere mi input.
+    placeholder: nos da una descripción dentro de mi input para que sea mas clara la información solicitada.
+    value: que le asigna un valor en espcifico a mi input -->
+    <input type="text" required > <!-- cuadro de texto, con required hace que sea afuerza llenar esa informacion -->
+    <input type="submit"> <!--envia datos a formularios (boton)-->
+    <br>
+    <input type="email" placeholder="escribe tu correo"> <!-- campo que si solicita para correo, pone mensaje en el cuadro con el atributo placeholder-->
+    <input type="submit">
+    <br>
+    <input type="password" required>
+    <input type="submit">
+
+    <input type="color"> <!--paleta de color para escoger un color-->
+    <input type="checkbox"> <!--cuadrado para poner palomita-->
+    <input type="date"> <!--calendario-->
+    <input type="time"> <!--Cuadro para hora-->
+    <input type="datetime"> <!--Cuadro para poner la fecha y hora-->
+
+    <input type="radio"> <!--Circulo para marcar opcion-->
+    <input type="file"> <!--Elegir subir archivo-->
+    <input type="button" value="abrir"> <!--boton, atributovalue nos permite poner un nombre o valor-->
+    <input type="number"> <!--Cuadro que solo permite numeros-->
+
+    <input type="text" name="username"> <!--atributo name= nombre especifico para identificarlo. identidica nuestro cuadro de texto-->
+    <hr>
+    <br>
+
+    <label>Nombre:</label>
+    <input type="text" name="Nombre" required placeholder="Escribe tu nombre">
+    <input type="submit"> 
+    <br>
+    <label>Correo:</label>
+    <input type="email" placeholder="escribe tu correo">
+    <input type="submit">
+    <br>
+    <label>Password:</label>
+    <input type="password" required>
+    <input type="submit">
+    <br>
+    <label> selecciona un color:</label>
+    <input type="color"> 
+    <br>
+    <label><input type="checkbox"> pizza </label>
+    <br>
+    <label> Fecha:</label>
+    <input type="date"> 
+    <br>
+    <label>Hora:</label>
+    <input type="time"> 
+    <br>
+    <input type="datetime"> 
+    <br>
+    <label><input type="radio">Tortas</label>
+    <br> 
+    <input type="file">
+    <br> 
+    <input type="button" value="abrir">
+    <br> 
+    <input type="number"> 
+
+    <br><br><br>
+
+    <!--Dentro de mis inputs voy a tener cierto atributos que nos van a facilitar identificar las funciones y reqimientos de los mismos, required se refiere a un campo que debe ser completado, name  nos ayuda a identificar a que se refiere mi input, placeholder nos da una descripción dentro de mi input para que sea mas clara la información solicitada y value que le asigna un valor en espcifico a mi input -->
+    <label>Nombre</label>
+    <br>
+    <input type="text" name="username">
+    <input type="submit">
+    <br>
+    <label>Email</label>
+    <input type="email" placeholder="Escribe tu correo ">
+    <input type="submit">
+    <br>
+    <label>Contraseña</label>
+    <input type="password" required>
+    <br>
+    <label>Elige un color</label>
+    <input type="color">
+    <br>
+    <label>Selecciona la casilla</label>
+    <input type="checkbox" required>
+    <br>
+    <label>Hora</label>
+    <input type="date">
+    <br>
+    <label>Fecha</label>
+    <input type="datetime">
+    <br>
+    <label>Selecciona la opción</label>
+    <input type="radio">
+    <br>
+    <label>Archivo</label>
+    <input type="file">
+    <br>
+    <label>Boton</label>
+    <input type="button" value="Abrir">
+    <br>
+    <label>Numero</label>
+    <input type="number">
+
+
+
+</form>    
+</body>
+</html>

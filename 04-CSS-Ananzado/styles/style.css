@@ -1,0 +1,83 @@
+/*Variables para mi paleta de colores*/
+:root{
+    --bg-color: #171F26; /*--background-color*/
+    --dark-primary: #3B4E59;
+    --dark-secondary: #4C6473;
+    --light-primary: #BACBD9;
+    --light-secondary: #7693A6;
+    --font-primary: Verdana, Geneva, Tahoma, sans-serif;
+        --font-secondary: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    /*Mando a llamar la variable correspondiente al color guardado*/
+    background-color: var(--bg-color);
+    color: #BACBD9;
+    font-family: var(--font-primary);
+}
+
+.position{
+    background-color: var(--dark-secondary);
+    color: var(--light-primary);
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
+
+#static {
+    /*Todos los elementos por default se encuentran posicionados de manera estatica*/
+    position: static;
+    top: 20px;
+    right: 10px;
+}
+
+#relative {
+    position: relative; /*se mueve donde quiera*/
+    top: 2000px;
+    left: 300px;
+}
+
+#fixed {/*fijo aunque el viewport se mueva*/
+    position: fixed;
+    top: 100px;
+    left: 350px;
+}
+
+#absolute { /*Se mueve deacuerdo a su asestro (elemento mas cerca) usando margin*/
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#sticky { /*fijo aunque el viewport se mueva pero se remplaza si encuentra otro sticky y ahora ese se fija*/
+    position: sticky;
+}
+
+.display{
+    background-color: var(--light-primary);
+    color: var(--dark-primary);
+    width: 80px;
+    height: 80px;
+    margin: 3px;
+    /*Display in block, es la visualizacion del elemento por default
+    display: block;*/
+    /*display: inline; Ajusta la altura al contenido del elemento y los muestra en linea (una sola fila)*/
+    display: inline-block; /*Los elementos se colocan en linea pero ya no se ajustan al contenido sino que mantienen su display block*/
+}
+
+
+/*Diseño responsivo (responsive Design). una aplicacion web puede tomar diferentes propiedades segun el tamaño del viewport, es decir, segun el tamaño del dispositivo desde el cual se accede.
+Para manipular las propiedades de todos mis elementos, utilizamos medias queries
+*/
+
+/*Aplicando media queries para hacer responsivo nuestro display none*/
+@media (max-width: 720px){
+    .display{
+        display: block;
+        background-color: darkseagreen;
+    }
+
+    #display-none{
+        display: none; /*aculta el elemento*/
+    }
+}

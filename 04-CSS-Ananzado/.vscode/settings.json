@@ -1,0 +1,7 @@
+{
+    "window.autoDetectColorScheme": false,
+    "editor.bracketPairColorization.enabled": true,
+    "screencastMode.mouseIndicatorColor": "#FF0000",
+    "workbench.colorTheme": "Seti Black",
+    "workbench.editor.decorations.colors": false
+}
