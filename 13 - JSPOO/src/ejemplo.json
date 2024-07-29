@@ -1,0 +1,34 @@
+[
+    {
+        "nombre": "Felipe",
+        "apellido": "Mejia",
+        "edad": 29,
+        "botanaFavs": [
+            "choolates",
+            "chips de pepino",
+            "barras de amaranto"
+        ]
+    },
+
+    {
+        "nombre": "Jorge",
+        "apellido": "Licea",
+        "edad": 28,
+        "botanaFavs": [
+            "chips fuego",
+            "panditas",
+            "cacahuates"
+        ]
+    },
+
+    {
+        "nombre": "Josue",
+        "apellido": "Hernandez",
+        "edad": 25,
+        "botanaFavs": [
+            "choolates",
+            "chips adobadas",
+            "barras de amaranto"
+        ]
+    }
+]
