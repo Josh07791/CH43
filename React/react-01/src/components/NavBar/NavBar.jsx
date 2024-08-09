@@ -1,10 +1,11 @@
-// Crear componente como función de JavaScript. Debe retornar lenguaje de marcado (HTML) y debe contener un fragmento para poder agregar múltiples nodos.
+// Crear componente como funciï¿½n de JavaScript. Debe retornar lenguaje de marcado (HTML) y debe contener un fragmento para poder agregar mï¿½ltiples nodos.
 // Las clases de los elementos se definen con la palabra className y se mandan a llamar en CSS de forma habitual (.)
 // Para vincular el archivo .jsx con la hoja de estilos, tenemos que importar el archivo CSS
-// Puedo importar la imagen y utlizarla la veces que yo quiera dentro de la función
+// Puedo importar la imagen y utlizarla la veces que yo quiera dentro de la funciï¿½n
 import './NavBar.css'
 import logoNasa from '../../assets/NASA-logo.png'
 import Button from '../Button/Button'
+import {Link} from 'react-router-dom'
 
 const NavBar = () => {
 
@@ -12,15 +13,20 @@ const NavBar = () => {
         <>
         <nav className="navbar--container">
             <div className="navbar--logo">
-                <img src={logoNasa} alt="logo nasa" />
+                {/* Utilizamos Link para enlazar aotra parte de mi proyecto */}
+                <Link to = {'/'}>
+                    <img src={logoNasa} alt="logo nasa" />
+                </Link>
             </div>
             <div className="navbar--menu">
-                <a href="http://open-notify.org/Open-Notify-API/People-In-Space/" target="_blank">Astros</a>
+                <Link to = {'/astros-api'}>
+                    <a>Astros</a>
+                </Link>
                 <a href="https://www.nasa.gov/" target="_blank">Nasa</a>
                 <a href="https://www.estacionespacial.com/" target="_blank">ISS</a>
             </div>
             <div className="navbar--search">
-                <input type="text" name="search" placeholder="Escribe lo que estás buscando" />
+                <input type="text" name="search" placeholder="Escribe lo que estï¿½s buscando" />
                 {/* <button>Buscar</button> */}
                 <Button
                     text = 'Buscar'

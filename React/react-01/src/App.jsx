@@ -3,6 +3,7 @@ import NavBar from './components/NavBar/NavBar'
 import Button from './components/Button/Button'
 import Products from './components/Products/Products'
 import Footer from './components/Footer/Footer';
+import BasicCard from './components/Card/BasicCard';
 
 /* Con los fragmentos, le digo a React que puede recibir múltiples nodos hijos */
 function App() {
@@ -14,38 +15,42 @@ function App() {
 
 
   return (
-    <> 
+    <>
       <NavBar />
       <h1>React</h1>
       <Button
-        text = 'Botón'
+        text='Botón'
       />
 
       <Products
-        image = { tenisMorados }
-        title = 'Tenis morados' 
-        description = 'Fabricados en México con materiales reutilizados' 
-        price = '$ 2599.00'
+        image={tenisMorados}
+        title='Tenis morados'
+        description='Fabricados en México con materiales reutilizados'
+        price='$ 2599.00'
       />
       <Products
-        image={ tenisDark }
+        image={tenisDark}
         title='Tenis Speed Dark'
         description='Velocidad al máximo con los tenis runners'
         price='$ 1598.00'
       />
       <Products
-        image = {tenisBrown}
-        title = 'Tenis Camel'
-        description = 'Vive a la vanguardia con estos elegantes tenis que puedes usar en cualquier lugar'
-        price = '$ 574.00'
+        image={tenisBrown}
+        title='Tenis Camel'
+        description='Vive a la vanguardia con estos elegantes tenis que puedes usar en cualquier lugar'
+        price='$ 574.00'
       />
 
       <hr />
-      <h2 style={{color: '#fff176', fontSize: 25}}>Material UI - Components</h2>
+      <h2 style={{ color: '#fff176', fontSize: 25 }}>Material UI - Components</h2>
       {/* ejemplo de MUI */}
-      <br />
+      <div style = {{display: 'flex', justifyContent: 'center', }}>
+        <BasicCard />
+      </div>
+      {/* <br /> */}
+
       {/* Footer */}
-      <Footer/>
+      <Footer />
     </>
   )
 }
